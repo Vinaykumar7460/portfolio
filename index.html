@@ -1,0 +1,305 @@
+npm install -g localtunnel
+lt --port 3000<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vinay Pawar - Creative Developer & WebGL Designer">
+    <title>Vinay Pawar - Creative Developer & WebGL Designer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VP</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#work" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with WebGL Slider -->
+    <section id="home" class="hero">
+        <div class="webgl-container" id="webglContainer"></div>
+        <div class="hero-content">
+            <div class="hero-wrapper">
+                <div class="hero-left">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Vinay Pawar</h1>
+                        <p class="hero-subtitle">Creative Developer | WebGL Designer</p>
+                        <p class="hero-description">Crafting immersive web experiences with cutting-edge technologies</p>
+                        <div class="hero-cta">
+                            <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                                Get In Touch
+                            </button>
+                            <button class="btn btn-secondary" onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'})">
+                                View Work
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="floating-circle-container">
+                        <div class="circle-glow"></div>
+                        <img src="https://image2url.com/r2/default/images/1768461734995-d3f0387f-e28a-4c04-971a-ef36a482016c.jpg" alt="Profile" class="circle-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a creative developer with a passion for building immersive web experiences using cutting-edge technologies like WebGL and Three.js. Specializing in interactive 3D visualizations, I craft digital experiences that captivate and inspire.</p>
+                    <p>With expertise in modern web technologies, I focus on creating performant, accessible, and beautiful digital products. My work blends creativity with technical excellence to deliver premium web experiences.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card glass">
+                        <h3>50+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card glass">
+                        <h3>30+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-card glass">
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work/Portfolio Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="work-grid">
+                <div class="work-card glass">
+                    <div class="work-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="work-content">
+                        <h3>Interactive WebGL Experience</h3>
+                        <p>Immersive 3D visualization with real-time rendering and particle effects</p>
+                        <div class="work-tags">
+                            <span>Three.js</span>
+                            <span>WebGL</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card glass">
+                    <div class="work-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="work-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Modern responsive design with smooth animations and optimized performance</p>
+                        <div class="work-tags">
+                            <span>React</span>
+                            <span>CSS3</span>
+                            <span>Performance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card glass">
+                    <div class="work-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="work-content">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p>Interactive charts and real-time data rendering with beautiful UI</p>
+                        <div class="work-tags">
+                            <span>D3.js</span>
+                            <span>Canvas</span>
+                            <span>Data Viz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card glass">
+                    <div class="work-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="work-content">
+                        <h3>Animated Motion Graphics</h3>
+                        <p>Cinematic animations and transitions for web and mobile applications</p>
+                        <div class="work-tags">
+                            <span>GSAP</span>
+                            <span>Animation</span>
+                            <span>Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card glass">
+                    <div class="work-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    <div class="work-content">
+                        <h3>3D Product Showcase</h3>
+                        <p>Interactive 3D models with touch controls and real-time lighting</p>
+                        <div class="work-tags">
+                            <span>WebGL</span>
+                            <span>3D</span>
+                            <span>Babylon.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card glass">
+                    <div class="work-image" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"></div>
+                    <div class="work-content">
+                        <h3>Creative Brand Website</h3>
+                        <p>Premium design with glassmorphism effects and micro-interactions</p>
+                        <div class="work-tags">
+                            <span>HTML/CSS</span>
+                            <span>Design</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass">
+                    <h3>3D & Graphics</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Three.js</span>
+                        <span class="skill-tag">WebGL</span>
+                        <span class="skill-tag">Babylon.js</span>
+                        <span class="skill-tag">Canvas API</span>
+                        <span class="skill-tag">GLSL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass">
+                    <h3>Animation & Motion</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">GSAP</span>
+                        <span class="skill-tag">Framer Motion</span>
+                        <span class="skill-tag">CSS Animation</span>
+                        <span class="skill-tag">D3.js</span>
+                        <span class="skill-tag">SVG Animation</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Webpack</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <p class="contact-subtitle">I'm always interested in hearing about new projects and opportunities.</p>
+                <div class="contact-form glass">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon glass" title="GitHub">
+                        <span>GH</span>
+                    </a>
+                    <a href="#" class="social-icon glass" title="LinkedIn">
+                        <span>LI</span>
+                    </a>
+                    <a href="#" class="social-icon glass" title="Twitter">
+                        <span>TW</span>
+                    </a>
+                    <a href="#" class="social-icon glass" title="CodePen">
+                        <span>CP</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vinay Pawar. All rights reserved. | Crafted with passion and WebGL</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/6361757910?text=Hello%20Vinay" target="_blank" rel="noopener noreferrer" class="whatsapp-button" title="Chat with us on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a8.06 8.06 0 00-8.052 8.057c0 1.596.471 3.129 1.365 4.408l-1.395 5.084 5.203-1.366c1.231.668 2.632 1.026 4.082 1.026h.004c4.46 0 8.057-3.582 8.057-8.047 0-2.141-.853-4.149-2.393-5.654a8.003 8.003 0 00-5.667-2.408m0-1.652c1.97 0 3.818.741 5.207 2.089 1.387 1.347 2.152 3.14 2.152 5.031 0 5.263-4.193 9.449-9.339 9.449-1.549 0-3.053-.395-4.38-1.145l-4.818 1.266 1.29-4.717A8.987 8.987 0 011.87 12.12c0-5.263 4.193-9.449 9.339-9.449"/>
+        </svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
